@@ -1,19 +1,17 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
+nav: true
+nav_order: 1
 subtitle: Research · Projects · Notes
-
 profile: false # enable after adding a profile image and details
-
 selected_papers: false # enable after adding entries to `_bibliography/papers.bib`
 social: false # enable after adding contact links to `_data/socials.yml`
-
 announcements:
   enabled: false # enable after adding items to `_news`
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
-
 latest_posts:
   enabled: false # enable after adding your own posts
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
