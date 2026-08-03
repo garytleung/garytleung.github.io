@@ -2,16 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Gary # the website title (if blank, full name will be used instead)
+title: Gary Leung # the website title (if blank, full name will be used instead)
 first_name: Gary
 middle_name:
-last_name:
+last_name: Leung
 contact_note: >
   Add your preferred contact details in `_data/socials.yml`.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Gary's academic website for research, publications, projects, and notes.
-footer_text: >
-  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>.
+  Gary Leung's academic website for research, publications, projects, and notes.
+footer_text:
 keywords: academic website, research, publications, projects # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎓 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -19,9 +18,9 @@ apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL)
 
 url: "https://garytleung.github.io" # set to the production hostname, for example https://yourusername.github.io
 baseurl: "" # set to /repository-name for a GitHub project site; leave blank for a root site
-last_updated: true # set to true if you want to display last updated in the footer
+last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+back_to_top: false # set to false to disable the back to top button
 
 # -----------------------------------------------------------------------------
 # Theme
@@ -94,7 +93,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: false
 socials_in_search: false
 posts_in_search: false
