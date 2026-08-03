@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-nav: true
+nav: false
 nav_order: 1
 subtitle: Research · Projects · Notes
 profile: false # enable after adding a profile image and details
