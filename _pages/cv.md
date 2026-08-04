@@ -9,31 +9,39 @@ nav_order: 4
 
 <style>
   .cv-page {
-    max-width: 900px;
+    max-width: 980px;
   }
 
   .cv-actions {
-    margin: 0.25rem 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: 0.25rem 0 1.25rem;
   }
 
-  .cv-download {
+  .cv-action {
     display: inline-block;
     padding: 0.58rem 0.95rem;
     border: 1px solid var(--global-theme-color, #00356b);
     border-radius: 0.35rem;
-    background: var(--global-theme-color, #00356b);
-    color: #fff !important;
     font-weight: 600;
+    text-align: center;
     text-decoration: none;
   }
 
-  .cv-download:hover {
+  .cv-action:hover {
     opacity: 0.88;
     text-decoration: none;
   }
 
-  .cv-mobile-note {
-    display: none;
+  .cv-open {
+    background: var(--global-theme-color, #00356b);
+    color: #fff !important;
+  }
+
+  .cv-download {
+    background: transparent;
+    color: var(--global-theme-color, #00356b) !important;
   }
 
   .cv-viewer {
@@ -42,41 +50,47 @@ nav_order: 4
     height: 1100px;
     border: 1px solid rgba(0, 53, 107, 0.18);
     border-radius: 0.35rem;
-    background: #fff;
+    background: #f5f6f7;
   }
 
-  @media (max-width: 700px) {
-    .cv-actions {
-      margin-bottom: 1rem;
-    }
-
-    .cv-download {
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
-
-    .cv-mobile-note {
-      display: block;
-      margin: 0;
-      padding: 1rem;
-      border-left: 3px solid var(--global-theme-color, #00356b);
-      background: rgba(0, 53, 107, 0.055);
-      line-height: 1.55;
-    }
-
+  @media (max-width: 1024px) {
     .cv-viewer {
-      display: none;
+      height: 78vh;
+      height: 78svh;
+      min-height: 620px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .cv-actions {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .cv-action {
+      width: 100%;
+    }
+  }
+
+  @media (max-height: 600px) and (orientation: landscape) {
+    .cv-viewer {
+      height: 520px;
+      min-height: 520px;
     }
   }
 </style>
 
 <div class="cv-page">
-  <p class="cv-actions">
-    <a class="cv-download" href="{{ '/files/GaryLeung_CV_Jul31.pdf' | relative_url }}" target="_blank" rel="noopener">Open CV in full screen (PDF)</a>
-  </p>
+  <div class="cv-actions">
+    <a class="cv-action cv-open" href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fgarytleung.github.io%2Ffiles%2FGaryLeung_CV_Jul31.pdf#zoom=page-width&amp;pagemode=none" target="_blank" rel="noopener">Open full-screen viewer</a>
+    <a class="cv-action cv-download" href="{{ '/files/GaryLeung_CV_Jul31.pdf' | relative_url }}" download="GaryLeung_CV.pdf">Download PDF</a>
+  </div>
 
-  <p class="cv-mobile-note">For the best experience on a phone, use the button above to open the complete CV in your browser’s full-screen PDF viewer.</p>
-
-  <iframe class="cv-viewer" src="{{ '/files/GaryLeung_CV_Jul31.pdf' | relative_url }}" title="Gary Leung curriculum vitae"></iframe>
+  <iframe
+    class="cv-viewer"
+    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fgarytleung.github.io%2Ffiles%2FGaryLeung_CV_Jul31.pdf#zoom=page-width&amp;pagemode=none"
+    title="Gary Leung curriculum vitae"
+    loading="eager"
+    allow="fullscreen"
+  ></iframe>
 </div>
