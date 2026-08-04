@@ -13,9 +13,6 @@ nav_order: 4
   }
 
   .cv-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
     margin: 0.25rem 0 1.25rem;
   }
 
@@ -34,10 +31,6 @@ nav_order: 4
     text-decoration: none;
   }
 
-  .cv-open {
-    background: var(--global-theme-color, #00356b);
-    color: #fff !important;
-  }
 
   .cv-download {
     background: transparent;
@@ -62,12 +55,8 @@ nav_order: 4
   }
 
   @media (max-width: 520px) {
-    .cv-actions {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
     .cv-action {
+      display: block;
       width: 100%;
     }
   }
@@ -82,7 +71,6 @@ nav_order: 4
 
 <div class="cv-page">
   <div class="cv-actions">
-    <a class="cv-action cv-open" href="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fgarytleung.github.io%2Ffiles%2FGaryLeung_CV_Jul31.pdf#zoom=page-width&amp;pagemode=none" target="_blank" rel="noopener">Open full-screen viewer</a>
     <a class="cv-action cv-download" href="{{ '/files/GaryLeung_CV_Jul31.pdf' | relative_url }}" download="GaryLeung_CV.pdf">Download PDF</a>
   </div>
 
