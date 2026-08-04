@@ -11,34 +11,6 @@ nav_order: 3
     max-width: 820px;
   }
 
-  .teaching-intro {
-    margin: 0.35rem 0 3rem;
-    padding-left: 1.35rem;
-    border-left: 3px solid var(--global-theme-color, #00356b);
-  }
-
-  .teaching-kicker {
-    margin: 0 0 0.55rem;
-    color: var(--global-theme-color, #00356b);
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-  }
-
-  .teaching-summary {
-    margin: 0;
-    max-width: 42rem;
-    font-size: 1.15rem;
-    font-weight: 500;
-    line-height: 1.6;
-  }
-
-  .teaching-section {
-    padding-top: 2rem;
-    border-top: 1px solid rgba(0, 53, 107, 0.18);
-  }
-
   .teaching-section h2 {
     margin: 0 0 0.85rem;
     color: var(--global-theme-color, #00356b);
@@ -93,14 +65,6 @@ nav_order: 3
   }
 
   @media (max-width: 600px) {
-    .teaching-intro {
-      padding-left: 1rem;
-    }
-
-    .teaching-summary {
-      font-size: 1.05rem;
-    }
-
     .teaching-course {
       grid-template-columns: 1fr;
       gap: 0.55rem;
@@ -113,13 +77,8 @@ nav_order: 3
 </style>
 
 <div class="teaching-page">
-  <section class="teaching-intro" aria-labelledby="teaching-summary">
-    <p class="teaching-kicker">Yale University</p>
-    <p class="teaching-summary" id="teaching-summary">As a Teaching Fellow, I have taught the following four courses.</p>
-  </section>
-
   <section class="teaching-section" aria-labelledby="courses-title">
-    <h2 id="courses-title">Courses</h2>
+    <h2 id="courses-title">Courses Taught as a Teaching Fellow at Yale University</h2>
 
     <ul class="teaching-course-list">
       <li class="teaching-course">
