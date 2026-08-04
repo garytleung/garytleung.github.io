@@ -13,7 +13,46 @@
   footer {
     display: none !important;
   }
-</style> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Gary Leung </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item active"> <a class="nav-link" href="/cv/">CV <span class="sr-only">(current)</span> </a> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">CV</h1> <p class="post-description">Curriculum vitae.</p> </header> <article> <p>My curriculum vitae will be available here soon.</p> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Gary Leung. </div> </footer> <script>
+</style> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Gary Leung </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">Research </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item active"> <a class="nav-link" href="/cv/">CV <span class="sr-only">(current)</span> </a> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">CV</h1> <p class="post-description">Curriculum vitae.</p> </header> <article> <style>
+  .cv-page {
+    max-width: 900px;
+  }
+
+  .cv-actions {
+    margin: 0.25rem 0 1.5rem;
+  }
+
+  .cv-download {
+    display: inline-block;
+    padding: 0.58rem 0.95rem;
+    border: 1px solid var(--global-theme-color, #00356b);
+    border-radius: 0.35rem;
+    background: var(--global-theme-color, #00356b);
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .cv-download:hover {
+    opacity: 0.88;
+    text-decoration: none;
+  }
+
+  .cv-viewer {
+    display: block;
+    width: 100%;
+    height: 1100px;
+    border: 1px solid rgba(0, 53, 107, 0.18);
+    border-radius: 0.35rem;
+    background: #fff;
+  }
+
+  @media (max-width: 700px) {
+    .cv-viewer {
+      height: 760px;
+    }
+  }
+</style> <div class="cv-page"> <p class="cv-actions"> <a class="cv-download" href="/files/GaryLeung_CV_Jul31.pdf" target="_blank" rel="noopener">Open or download CV (PDF)</a> </p> <iframe class="cv-viewer" src="/files/GaryLeung_CV_Jul31.pdf" title="Gary Leung curriculum vitae"></iframe> </div> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Gary Leung. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
