@@ -38,6 +38,10 @@
     text-decoration: none;
   }
 
+  .cv-mobile-note {
+    display: none;
+  }
+
   .cv-viewer {
     display: block;
     width: 100%;
@@ -48,11 +52,30 @@
   }
 
   @media (max-width: 700px) {
+    .cv-actions {
+      margin-bottom: 1rem;
+    }
+
+    .cv-download {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    .cv-mobile-note {
+      display: block;
+      margin: 0;
+      padding: 1rem;
+      border-left: 3px solid var(--global-theme-color, #00356b);
+      background: rgba(0, 53, 107, 0.055);
+      line-height: 1.55;
+    }
+
     .cv-viewer {
-      height: 760px;
+      display: none;
     }
   }
-</style> <div class="cv-page"> <p class="cv-actions"> <a class="cv-download" href="/files/GaryLeung_CV_Jul31.pdf" target="_blank" rel="noopener">Open or download CV (PDF)</a> </p> <iframe class="cv-viewer" src="/files/GaryLeung_CV_Jul31.pdf" title="Gary Leung curriculum vitae"></iframe> </div> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Gary Leung. </div> </footer> <script>
+</style> <div class="cv-page"> <p class="cv-actions"> <a class="cv-download" href="/files/GaryLeung_CV_Jul31.pdf" target="_blank" rel="noopener">Open CV in full screen (PDF)</a> </p> <p class="cv-mobile-note">For the best experience on a phone, use the button above to open the complete CV in your browser’s full-screen PDF viewer.</p> <iframe class="cv-viewer" src="/files/GaryLeung_CV_Jul31.pdf" title="Gary Leung curriculum vitae"></iframe> </div> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Gary Leung. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
