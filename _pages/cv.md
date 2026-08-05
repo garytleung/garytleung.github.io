@@ -71,12 +71,12 @@ nav_order: 4
 
 <div class="cv-page">
   <div class="cv-actions">
-    <a class="cv-action cv-download" href="{{ '/files/GaryLeung_CV_Jul31.pdf' | relative_url }}" download="GaryLeung_CV.pdf">Download PDF</a>
+    <a class="cv-action cv-download" href="{{ '/files/GaryLeung_CV_Aug5.pdf' | relative_url }}" download="GaryLeung_CV.pdf">Download PDF</a>
   </div>
 
   <iframe
     class="cv-viewer"
-    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fgarytleung.github.io%2Ffiles%2FGaryLeung_CV_Jul31.pdf#zoom=page-width&amp;pagemode=none"
+    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fgarytleung.github.io%2Ffiles%2FGaryLeung_CV_Aug5.pdf#zoom=page-width&amp;pagemode=none"
     title="Gary Leung curriculum vitae"
     loading="eager"
     allow="fullscreen"
