@@ -4,7 +4,10 @@ title: About
 permalink: /
 nav: false
 nav_order: 1
-profile: false # enable after adding a profile image and details
+profile:
+  align: right
+  image: gary_headshot_square_1x1.jpg
+  image_circular: false
 selected_papers: false # enable after adding entries to `_bibliography/papers.bib`
 social: false # enable after adding contact links to `_data/socials.yml`
 announcements:
