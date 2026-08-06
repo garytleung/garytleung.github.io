@@ -20,6 +20,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<style>
+  .profile {
+    max-width: 260px;
+  }
+
+  @media (max-width: 575.98px) {
+    .profile {
+      float: none !important;
+      width: min(72vw, 260px) !important;
+      margin: 0 auto 1.5rem !important;
+    }
+  }
+</style>
+
 I am a Ph.D. candidate in the Department of Political Science at Yale University, where I study nationalism, authoritarian politics, and political psychology, with a regional focus on China.
 
 My dissertation, *Nationalism and Authoritarian Rule*, asks when nationalism strengthens authoritarian rule and at what cost. Autocrats often promote state nationalism, which defines the nation through a common state, its political institutions, and its territorial boundaries. I argue that state nationalism creates a legitimacy–unity trade-off: closely linking the nation to the state can increase perceived regime legitimacy, but it can also allow grievances against the regime to spill over into disidentification from the nation itself. I test this argument with original online and laboratory experiments in mainland China and Hong Kong. Another part of the dissertation develops a self-persuasion design that shifts stable political beliefs while holding information constant across conditions.
